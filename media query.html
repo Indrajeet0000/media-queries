@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media quary</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: aquamarine;
+        
+        }
+
+        .laptop,
+        .tablet,
+        .mobile,
+        .normal {
+            font-size: 50px;
+            text-align: center;
+            display: none;
+            height: 50%;
+          
+        }
+
+        @media screen and (max-width: 1440px) {
+            .laptop {
+                display: block;
+                background-color: blueviolet;
+            }
+
+        }
+
+        @media screen and (max-width: 768px) {
+            .laptop {
+                display: none
+            }
+
+            .tablet {
+                display: block;
+                background-color: blue;
+            }
+            .normal{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 1024px ) {
+            .laptop {
+                display: none
+            }
+
+            .normal{
+                display: block;
+                width: 100vw;
+                height: 50%;
+                background-color: #ce1919d8;
+              
+            }
+            .tablet{
+                display: none;
+            }
+        }
+        @media screen and (max-width: 425px ) {
+            .laptop {
+                display: none
+            }
+
+            .normal{
+                display: none;
+            }
+            .tablet{
+                display: none;
+            }
+            .mobile{
+                display: block;
+                background-color: hsl(147, 73%, 49%);
+            }
+        }
+
+
+        
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="laptop">laptop</div>
+    <div class="tablet">tablet</div>
+    <div class="mobile">mobile</div>
+    <div class="normal">normal</div>
+
+
+</body>
+
+</html>
